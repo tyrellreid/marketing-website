@@ -1,0 +1,18 @@
+<section>
+  <h2>Success Stories</h2>
+  <div class="carousel">
+    <div class="case active">Client A: +200% ROI</div>
+    <div class="case">Client B: 5x Lead Increase</div>
+    <div class="case">Client C: Brand Revamp</div>
+    <button onclick="nextSlide()">Next</button>
+  </div>
+</section>
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.case');
+
+  function nextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }

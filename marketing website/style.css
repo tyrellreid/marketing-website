@@ -1,0 +1,7 @@
+body { font-family: Arial; margin: 0; padding: 0; }
+nav a { margin: 0 10px; text-decoration: none; }
+.hero { padding: 100px; text-align: center; background: #eee; }
+.desc, .panel { display: none; }
+.desc.show, .panel.open { display: block; }
+.case { display: none; }
+.case.active { display: block; }
